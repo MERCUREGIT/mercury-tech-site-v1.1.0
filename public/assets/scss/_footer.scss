@@ -1,0 +1,229 @@
+/*============ footer_area css ==============*/
+.footer_top {
+  background: #2a2931;
+  padding: 100px 0px;
+}
+.f-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.f_widget {
+  h5,
+  a {
+    color: #a1a1a1;
+    font-size: 16px;
+    font-family: $crim;
+    font-weight: 300;
+  }
+  .f-title {
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 54px;
+  }
+}
+.f_latest_widget {
+  .f_latest_item {
+    align-items: center;
+    border-top: 1px solid #32313a;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    .img_hover {
+      position: relative;
+      z-index: 1;
+      margin-right: 20px;
+      overflow: hidden;
+      img {
+        transition: all 0.3s linear;
+      }
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -6px;
+        margin-top: -9px;
+        color: #fff;
+        font-size: 16px;
+        transform: scale(0);
+        transition: all 0.2s linear;
+      }
+    }
+    .media-body {
+      h5 {
+        margin-bottom: 0px;
+        line-height: 30px;
+        transition: color 0.2s linear;
+        &:hover {
+          color: #fff;
+        }
+      }
+      .l_date {
+        font-size: 16px;
+        color: #7f7f7f;
+        font-family: $crim;
+        transition: color 0.2s linear;
+        &:hover {
+          color: $purple;
+        }
+      }
+    }
+    &:first-child {
+      padding-top: 0;
+      border: 0px;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &:hover {
+      .img_hover {
+        img {
+          transform: scale(1.09);
+        }
+        i {
+          transform: scale(1);
+        }
+        &:before {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+.f_link_widget {
+  ul {
+    overflow: hidden;
+    margin-bottom: -20px;
+    li {
+      width: 50%;
+      float: left;
+      margin-bottom: 20px;
+      a {
+        display: inline-block;
+        transition: all 0.2s linear;
+        i {
+          font-size: 11px;
+          margin-right: 8px;
+          top: -2px;
+          position: relative;
+          transition: all 0.2s linear;
+        }
+        &:hover {
+          color: #fff;
+          i {
+            color: $purple;
+          }
+        }
+      }
+    }
+  }
+}
+.recent_post_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3px;
+  margin-right: -3px;
+  li {
+    width: calc(100% / 3);
+    padding: 3px;
+    a {
+      display: block;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $purple;
+        position: absolute;
+        opacity: 0;
+        z-index: 0;
+        transition: all 0.2s linear;
+      }
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -6px;
+        margin-top: -9px;
+        color: #fff;
+        font-size: 16px;
+        transform: scale(0);
+        transition: all 0.2s linear;
+      }
+      img {
+        max-width: 100%;
+        transition: all 0.2s linear;
+        position: relative;
+        z-index: -1;
+      }
+      &:hover {
+        img {
+          transform: scale(1.08);
+        }
+        i {
+          transform: scale(1);
+        }
+        &::before {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+.f_tag_widget {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: -2px;
+    li {
+      padding: 5px;
+      a {
+        font-size: 16px;
+        border: 1px solid #32313c;
+        display: inline-block;
+        padding: 1px 15px 2px;
+        transition: all 0.2s linear;
+        &:hover {
+          border-color: $purple;
+          background: $purple;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.footer_bottom {
+  background: #212028;
+  padding: 34px 0px;
+  p,
+  a {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #8b8b8b;
+  }
+  p {
+    a {
+      color: $purple;
+    }
+  }
+  .f_menu {
+    text-align: right;
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+      a {
+        &:hover {
+          color: $purple;
+        }
+      }
+      & + li {
+        margin-left: 40px;
+      }
+    }
+  }
+}
+/*============ footer_area css ==============*/

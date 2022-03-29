@@ -1,0 +1,243 @@
+/*============== about area css =============*/
+.phone_mockup {
+  position: relative;
+  margin-left: -200px;
+  .phone_two {
+    position: absolute;
+    right: 0;
+  }
+}
+.about_content {
+  padding-left: 50px;
+  h6 {
+    font-size: 24px;
+    color: #8b8b8b;
+    font-style: italic;
+    font-family: $crim;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+  h2 {
+    font-size: 36px;
+    letter-spacing: 0.72px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    span {
+      font-weight: 700;
+    }
+  }
+  p {
+    margin-bottom: 28px;
+  }
+  .theme_btn {
+    margin-top: 22px;
+    &:hover {
+      background: transparent;
+      border-color: #8781bd;
+      color: #8781bd;
+      &:after {
+        background: transparent;
+      }
+    }
+  }
+}
+
+/*========== about_area_two css ===========*/
+.about_area_two {
+  .about_content {
+    padding-left: 0;
+  }
+}
+.about_item {
+  text-align: center;
+  border: 2px solid #f3f2f9;
+  padding: 45px 30px 30px;
+  margin: 15px 0px;
+  h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+}
+/*========== about_area_two css ===========*/
+
+/*========== work_area css ===========*/
+
+/*========== work_area css ===========*/
+
+/*========== process_area css ============*/
+.process_img {
+  height: 600px;
+  margin-left: 70px;
+}
+.precess_item {
+  cursor: pointer;
+  .icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: $pop;
+    background: #c4c2d3;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 30px;
+    transition: all 0.2s linear;
+  }
+  .media-body {
+    h6 {
+      font-size: 18px;
+      font-weight: 500;
+      position: relative;
+      margin-bottom: 0;
+      padding-bottom: 14px;
+      transition: color 0.2s linear;
+      &:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 70px;
+        height: 1px;
+        background: #8781bd;
+        bottom: 0;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      padding-top: 15px;
+    }
+  }
+  &:hover {
+    .icon {
+      background: #8781bd;
+    }
+    h6 {
+      color: #8781bd;
+    }
+  }
+  & + .precess_item {
+    margin-top: 50px;
+  }
+}
+/*========== process_area css ============*/
+/*========== promo_area css ============*/
+.promo_area {
+  position: relative;
+  padding: 280px 0px;
+  z-index: 1;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #212028;
+    opacity: 0.6;
+    z-index: -1;
+  }
+}
+.promo_content {
+  h2 {
+    font-size: 72px;
+    color: #fff;
+    margin-bottom: 40px;
+    span {
+      font-weight: 300;
+    }
+  }
+  p {
+    font-style: italic;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  .theme_w_btn {
+    margin: 0px 10px;
+  }
+}
+.promo_content_two {
+  p {
+    margin-bottom: 12px;
+  }
+  .line {
+    width: 70px;
+    height: 1px;
+    background: #717171;
+    margin: 0 auto 30px;
+  }
+}
+/*========== promo_area css ============*/
+
+/*========== mockup_frame_area css ============*/
+.mockup_frame_area {
+  padding-top: 100px;
+  overflow: hidden;
+}
+.mockup_box {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -7px;
+  .frame_one,
+  .frame_three {
+    position: absolute;
+    bottom: -80px;
+    z-index: -1;
+  }
+  .frame_one {
+    left: 0;
+  }
+  .frame_three {
+    right: 0;
+  }
+}
+/*========== mockup_frame_area css ============*/
+
+/*========== theme_promo_area css ============*/
+.theme_promo_area {
+  background: #8781bd;
+  text-align: center;
+  padding: 115px 0px;
+  h2 {
+    font-size: 60px;
+    font-family: $crim;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.6px;
+    color: #fff;
+    margin-bottom: 36px;
+  }
+}
+/*========== theme_promo_area css ============*/
+
+/*========== breadcrumb_area css ============*/
+.breadcrumb_area {
+  position: relative;
+  z-index: 1;
+  padding: 97px 0px;
+  .overlay_bg {
+    opacity: 0.8;
+  }
+}
+.bread_content {
+  text-align: center;
+  h2 {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 2.4px;
+  }
+}
+/*========== breadcrumb_area css ============*/
+
+/*========== mission_area css ============*/
+.mission_content {
+  margin-bottom: -26px;
+  p {
+    margin-bottom: 26px;
+  }
+}
+/*========== mission_area css ============*/

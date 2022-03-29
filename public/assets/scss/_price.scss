@@ -1,0 +1,100 @@
+/*=============  h_pricing_area css ==============*/
+.h_price_item {
+  text-align: center;
+  border: 1px solid #f3f2f9;
+  padding-bottom: 50px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  .price_head {
+    .p_top {
+      background: #212028;
+      padding: 29px 0px 31px;
+      h6 {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.9px;
+        color: #fff;
+        margin-bottom: 0;
+        &:before,
+        &:after {
+          content: "";
+          width: 8px;
+          height: 2px;
+          background: #fff;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        &:before {
+          margin-right: 25px;
+        }
+        &:after {
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+  .price {
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 300;
+    font-family: $pop;
+    background: $purple;
+    color: #fff;
+    padding: 31px 0px 37px;
+    sup {
+      font-size: 30px;
+      font-family: $crim;
+      font-style: italic;
+      top: -0.8em;
+      margin-left: 5px;
+    }
+    span {
+      display: block;
+      font-family: $crim;
+      font-style: italic;
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: 8px;
+    }
+  }
+  ul {
+    padding: 25px 40px;
+    margin-bottom: 0;
+    li {
+      padding: 32px 0px 18px;
+      h6 {
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        transition: color 0.2s linear;
+      }
+      & + li {
+        border-top: 1px solid #dcd9ee;
+      }
+    }
+  }
+  &:hover,
+  &.active {
+    background: #8781bd;
+    ul {
+      li {
+        border-color: #9791ca;
+        h6,
+        p {
+          color: #fff;
+        }
+      }
+    }
+    .theme_btn {
+      border-color: #fff;
+      color: $title;
+      &::after {
+        height: 500%;
+        opacity: 1;
+      }
+    }
+  }
+}
+/*=============  h_pricing_area css ==============*/

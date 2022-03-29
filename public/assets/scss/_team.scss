@@ -1,0 +1,60 @@
+/*========= team_area css ============*/
+.team_area .row {
+  margin-bottom: -30px;
+}
+.team_item {
+  text-align: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+  .tema_content {
+    border: 1px solid #f3f2f9;
+    padding: 26px 0px 0px;
+    margin-top: 5px;
+    h6 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 2px;
+      transition: color 0.2s linear;
+      &:hover {
+        color: #8781bd;
+      }
+    }
+    p {
+      font-style: italic;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  &:hover {
+    .img_hover {
+      &::before {
+        opacity: 0.9;
+      }
+      .icon {
+        transform: scale(1);
+      }
+    }
+  }
+}
+.team_social_icon {
+  border: 1px solid #f3f2f9;
+  padding: 4px 0px;
+  margin-top: 5px;
+  a {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #bababa;
+    color: #bababa;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+    transition: all 0.2s linear;
+    &:hover {
+      background: #8781bd;
+      color: #fff;
+      border-color: #8781bd;
+    }
+  }
+}
+/*========= team_area css ============*/

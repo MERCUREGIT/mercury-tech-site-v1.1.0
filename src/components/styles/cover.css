@@ -1,0 +1,18 @@
+.cover-container{
+  height: 68.8vh !important;
+
+}
+
+.community{
+  background-image: url("https://media.mktg.workday.com/is/image/workday/illustration-group-people-2?fmt=png-alpha&wid=1000");
+  background-size: cover;
+  height: 65vh !important;
+/* border-right: 2px solid red; */
+ 
+}
+
+.joinCommunity{
+  padding-top: 100px;
+  height: 65vh !important;
+  /* background-color: red; */
+}

@@ -1,0 +1,50 @@
+/*font Variables*/
+$crim: "Roboto", sans-serif;
+$pop: "Poppins", sans-serif;
+
+/*Color Variables*/
+$title: #131313;
+$pcolor: #505050;
+$purple: #8781bd;
+
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,500&display=swap");
+
+@font-face {
+  font-family: Crimsonroman;
+  font-weight: 400;
+  src: url("../font/CrimsonText-Roman.woff");
+}
+
+// Mixins
+@mixin transition(
+  $property: all,
+  $duration: 300ms,
+  $animate: linear,
+  $delay: 0s
+) {
+  transition: $property $duration $animate $delay;
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+.col-md-offset-right-1,
+.col-lg-offset-right-1 {
+  margin-right: 8.33333333%;
+}
+// Font family link
